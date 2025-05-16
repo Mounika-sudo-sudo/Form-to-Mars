@@ -1,30 +1,119 @@
-# Multi stage form
+# 🌌 Mars Colonization Program - Multi-Stage Application Form
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A responsive multi-stage application form built with **Next.js** and **Tailwind CSS** for the fictional Mars Colonization Program. This project features a space and Mars theme, comprehensive form validation, and email integration using EmailJS.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/harshas-projects-bf0e9731/v0-my-app)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/JMAj49U6gAY)
+---
 
-## Overview
+## 📋 Features
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+- ✅ **Multi-stage form** with three distinct sections:
+  - Personal Information
+  - Travel Preferences
+  - Health and Safety
+- 📱 **Responsive design** for mobile, tablet, and desktop
+- ✨ **Space and Mars theme** with animated stars background
+- ⚠️ **Real-time validation** with detailed error messages
+- 📩 **Email integration** using EmailJS to send form submissions
+- 🎬 **Animated UI** with progress indicators and transitions
+- ♿ **Accessibility features** for improved usability
 
-## Deployment
+---
 
-Your project is live at:
+## 🚀 Live Demo
 
-**[https://vercel.com/harshas-projects-bf0e9731/v0-my-app](https://vercel.com/harshas-projects-bf0e9731/v0-my-app)**
+https://my-app-final-delta.vercel.app/
 
-## Build your app
+---
 
-Continue building your app on:
+## 📦 Prerequisites
 
-**[https://v0.dev/chat/projects/JMAj49U6gAY](https://v0.dev/chat/projects/JMAj49U6gAY)**
+- Node.js 18.x or later
+- npm or yarn
+- An [EmailJS](https://www.emailjs.com) account (free tier works fine)
 
-## How It Works
+---
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## ⚙️ Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/mars-colonization-form.git
+   cd mars-colonization-form
+Paste your rich text content h
+
+*   **Install dependencies**:
+    
+    `npm install # or yarn install`
+    
+*   **(Optional)** Create a `.env.local` file in the root directory:
+    
+      
+    
+    `NEXT_PUBLIC_SITE_URL=http://localhost:3000`
+    
+
+## 📧 EmailJS Configuration
+
+This project uses EmailJS to send form submissions via email.
+
+### 1\. Create an EmailJS Account
+
+  *   Sign up at [https://www.emailjs.com](https://www.emailjs.com)
+      
+  *   Verify your account via email
+     
+
+### 2\. Create an Email Service
+
+  *   Go to **Dashboard → Email Services**
+     
+  *   Click **“Add New Service”**
+     
+  *   Choose your email provider (e.g., Gmail)
+      
+  *   Follow authentication steps
+      
+
+### 3\. Create an Email Template
+
+  *   Go to **Dashboard → Email Templates**
+     
+  *   Click **“Create New Template”**
+     
+  *   Add template variables like:
+
+     {{to\_name}} 
+
+     {{to\_email}} 
+
+     {{from\_name}} 
+
+     {{applicant\_name}}
+
+     {{applicant\_email}}
+
+     {{message}}  
+
+## 🖥️ Development
+
+Run the development server:
+
+`npm run dev # or yarn dev`
+
+Visit [http://localhost:3000](http://localhost:3000) to view the form locally.
+
+* * *
+
+## 🌐 Deployment
+
+### ✅ Deploying to Vercel (Recommended)
+
+   1.  Sign up at [https://vercel.com](https://vercel.com)
+   2.  Install Vercel CLI:    
+   
+       `npm install -g vercel`
+     
+   3.  Deploy:     
+          
+       `vercel`
